@@ -1,0 +1,174 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: whitesmoke;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: whitesmoke;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo Styling */
+.logo img {
+    max-width: 80px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.logo img:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo */
+    opacity: 0.8; /* Fades slightly */
+}
+
+/* Click Effect */
+.logo img:active {
+    transform: scale(0.9);
+    opacity: 0.6;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Toggle Button */
+.nav-toggle {
+    background: whitesmoke;
+    color: black;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 50%;
+    background: whitesmoke;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    text-align: left;
+    padding: 15px;
+}
+
+/* Individual Nav Items */
+.nav-item {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: black;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.nav-item:hover {
+    background: lightgray;
+    border-radius: 5px;
+}
+
+/* Slider Container */
+#slider-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+/* Slider */
+.slider {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Slide */
+.slide {
+    min-width: 100%;
+}
+
+/* Full-Width Images */
+.slide img {
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+/* Heading Styling */
+h2 {
+    font-size: 28px;
+    font-family:  Sans, sans-serif;
+    color: black;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background: whitesmoke;
+    border-radius: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* About Visio Fund Section */
+#about-visio {
+    padding: 40px 20px;
+    background: whitesmoke;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+/* Slider Navigation Controls */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.6);
+    color: white;
+    font-size: 40px; /* Increased size */
+    font-weight: bold;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/* Positioning */
+.prev { left: 20px; }
+.next { right: 20px; }
+
+/* Hover Effect */
+.prev:hover, .next:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
